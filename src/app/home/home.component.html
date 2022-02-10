@@ -1,0 +1,11 @@
+<p>home works!</p>
+
+<h2> Users </h2>
+<ul *ngIf="users">
+    users data available
+
+ <li *ngFor="let user of users.data">
+     <img [src]="user.avatar" style="border-radius: 50%;">
+{{user.email}}- {{user.first_name}} {{user.last_name}}
+ </li>
+</ul> 
