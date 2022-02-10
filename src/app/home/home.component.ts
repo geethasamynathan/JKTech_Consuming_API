@@ -7,6 +7,7 @@ import { DataService } from '../data.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  h1Style: boolean = false;
 users:any=[];
   constructor(private data:DataService) { }
 
@@ -17,5 +18,6 @@ users:any=[];
       }
       );
   }
+ 
 
 }
